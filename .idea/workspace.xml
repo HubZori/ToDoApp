@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6e13fad-655b-4640-b110-c253af7cefa4" name="Changes" comment="first commit" />
+    <list default="true" id="e6e13fad-655b-4640-b110-c253af7cefa4" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/ToDoItem/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/todosData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="20Xa0qxsqeVX6T8r82eykv3PhAd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1636193166386</updated>
       <workItem from="1636193169435" duration="9777000" />
-      <workItem from="1636209959207" duration="1639000" />
+      <workItem from="1636209959207" duration="1976000" />
+      <workItem from="1636280392327" duration="2071000" />
     </task>
     <servers />
   </component>
