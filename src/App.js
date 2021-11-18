@@ -1,76 +1,54 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
+import {useState} from 'react'
+import  ToDo from './ToDo'
+import ToDoForm from './ToDoForm'
 import './App.css';
-import ToDoItem from "./ToDoItem/ToDoItem";
-import state from "./state";
+import logo from './logo.svg'
 
+function App() {
+    const [todos, setTodos] = useState([])
 
-class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            todoItems: state.tasks
+    const addTask = (userInput) => {
+        if (userInput) {
+            const newItem = {
+                id: Math.random().toString(36).substr(2, 9),
+                task: userInput,
+                complete: false
+            }
+            setTodos([...todos, newItem])
         }
     }
+    const deleteTask = (id) => {
+        setTodos([...todos.filter((todo) => todo.id !== id)])
 
-    handleChange = (id) => {
-        const index = this.state.todoItems.map(item => item.id).indexOf(id);
-        this.setState(state => {
-            let {todoItems} = state;
-            todoItems[index].completed = true;
-            return todoItems;
-        })
     }
-
-    render() {
-
-        const {todoItems} = this.state;
-        const activeTasks = todoItems.filter(task => task.completed === false)
-        const completedTasks = todoItems.filter(task => task.completed === true)
-        const finalTasks = [...activeTasks, ...completedTasks].map(item => {
-            return (
-                <ToDoItem
-                    key={item.id}
-                    description={item.description}
-                    completed={item.completed}
-                    handleChange={() => {
-                        this.handleChange(item.id)
-                    }}
-                />
+    const handleToggle = (id) => {
+        setTodos([
+            ...todos.map((todo) =>
+                todo.id === id ? { ...todo, complete: !todo.complete} : {...todo }
             )
-        })
+        ])
 
-        let newTaskMessage = React.createRef();
-
-       // addNewTask={this.props.addNewTask}
-        let addTask = () => {
-            debugger;
-            let text = newTaskMessage.current.value;
-            this.props.addtask(text);
-        };
-
-
-
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="title">ПЛАНЫ НА ДЕНЬ</h1>
-                    <h2 className="titleBlock">Задачи</h2>
-                    <div>
-                        <textarea ref={newTaskMessage} placeholder='какие планы?'/>
-                    </div>
-                    <div>
-                        <button onClick={addTask}>add task</button>
-                    </div>
-
-                    {finalTasks}
-                </header>
-
-            </div>
-        );
     }
-}
 
+    return (
+        <div className="App">
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                <h1>Список задач: {todos.length}</h1>
+                <ToDoForm addTask={addTask}/>
+                {todos.map((todo) => {
+                    return (
+                        <ToDo
+                            todo={todo}
+                            key={todo.id}
+                            toggletask={handleToggle}
+                            deletetask={deleteTask}
+                        />
+                    )
+                })}
+            </header>
+        </div>
+    );
+}
 
 export default App;

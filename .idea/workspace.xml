@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e13fad-655b-4640-b110-c253af7cefa4" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ToDo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ToDoForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoItem/ToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todosData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +45,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ToDoForm.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20Xa0qxsqeVX6T8r82eykv3PhAd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,11 +59,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ToDoItem" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\ToDoItem" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +83,13 @@
       <workItem from="1636280392327" duration="10648000" />
       <workItem from="1636444442451" duration="4282000" />
       <workItem from="1636650753284" duration="8869000" />
-      <workItem from="1636748284060" duration="3133000" />
+      <workItem from="1636748284060" duration="5119000" />
+      <workItem from="1636921287499" duration="922000" />
+      <workItem from="1636971783084" duration="7502000" />
+      <workItem from="1637005437950" duration="6692000" />
+      <workItem from="1637092242552" duration="9716000" />
+      <workItem from="1637176148759" duration="7569000" />
+      <workItem from="1637224416652" duration="1485000" />
     </task>
     <servers />
   </component>
