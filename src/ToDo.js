@@ -1,3 +1,4 @@
+/*
 //import DeleteSharpIcon from '@mui/icons-material/DeleteSharp';
 
 
@@ -6,7 +7,7 @@ function ToDo({todo, toggletask, deletetask}) {
         <div key={todo.id} className='item-todo'>
             <div
                 className={todo.complete ? 'item-text strike' : 'item-text'}
-                 onClick={() => toggletask(todo.id)}
+                onClick={() => toggletask(todo.id)}
             >
                 {todo.task}
             </div>
@@ -19,4 +20,4 @@ function ToDo({todo, toggletask, deletetask}) {
     )
 }
 
-export default ToDo
+export default ToDo*/

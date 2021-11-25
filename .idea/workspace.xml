@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e13fad-655b-4640-b110-c253af7cefa4" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/ToDo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ToDoForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commponent/TodoInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoItem/ToDoItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/redux/store.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/redux/actionTypes.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ToDoForm.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20Xa0qxsqeVX6T8r82eykv3PhAd" />
@@ -59,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ToDoItem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -67,7 +71,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\redux" />
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\redux\modules" />
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\ToDoItem" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +99,11 @@
       <workItem from="1637005437950" duration="6692000" />
       <workItem from="1637092242552" duration="9716000" />
       <workItem from="1637176148759" duration="7569000" />
-      <workItem from="1637224416652" duration="1485000" />
+      <workItem from="1637224416652" duration="2138000" />
+      <workItem from="1637313148958" duration="6000" />
+      <workItem from="1637349227101" duration="95000" />
+      <workItem from="1637750532162" duration="19232000" />
+      <workItem from="1637832765120" duration="14370000" />
     </task>
     <servers />
   </component>
