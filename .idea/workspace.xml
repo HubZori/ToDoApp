@@ -2,23 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e13fad-655b-4640-b110-c253af7cefa4" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/commponent/Todo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commponent/Todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commponent/TodoList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commponent/TodoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoInput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commponent/Todo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/Todo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commponent/Todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/Todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commponent/TodoInput.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoInput.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commponent/TodoInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commponent/TodoList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commponent/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/root-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +61,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/commponent/TodoInput.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/commponent/TodoList.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
@@ -59,32 +71,53 @@
     <setting file="file://$PROJECT_DIR$/src/redux/reducer.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20Xa0qxsqeVX6T8r82eykv3PhAd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commponent" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\babay\Desktop\ZZ\my-app1\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\commponent" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\redux" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\redux\modules" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src" />
-      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\ToDoItem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,7 +144,9 @@
       <workItem from="1637750532162" duration="19232000" />
       <workItem from="1637832765120" duration="20866000" />
       <workItem from="1637921138482" duration="25326000" />
-      <workItem from="1638010744633" duration="7251000" />
+      <workItem from="1638010744633" duration="8236000" />
+      <workItem from="1638044127330" duration="3615000" />
+      <workItem from="1638047798579" duration="2984000" />
     </task>
     <servers />
   </component>
@@ -131,7 +166,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
