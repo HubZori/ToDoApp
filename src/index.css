@@ -18,7 +18,7 @@ code {
   text-align: center;
 }
 
-.App .item-todo {
+/*.App .item-todo {
   padding: 14px;
   width: 250px;
   margin: 0 auto;
@@ -33,12 +33,12 @@ code {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
+}*/
+/*
 .App .item-todo .item-text {
   display: inline-block;
   cursor: pointer;
-}
+}*/
 
 .App input {
   padding: 14px 32px 14px 16px;
@@ -62,7 +62,7 @@ code {
   text-transform: capitalize;
 }
 
-.App .item-todo .item-delete {
+/*.App .item-todo .item-delete {
   display: inline-block;
   cursor: pointer;
   float: right;
@@ -70,8 +70,9 @@ code {
   position: relative;
   left: -4px;
   bottom: 5px;
-}
+}*/
+/*
 
 .strike {
   text-decoration: line-through;
-}
+}*/

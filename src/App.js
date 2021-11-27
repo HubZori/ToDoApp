@@ -1,17 +1,13 @@
-import {useState} from 'react'
-import  ToDo from './ToDo'
-import ToDoForm from './ToDoForm'
 import './App.css';
-import logo from './logo.svg'
 import {useSelector} from 'react-redux';
-
+import TodoList from './commponent/TodoList'
 
 function App() {
     const state = useSelector((state) => ({...state}));
     console.log('state', state);
     return(
         <div className='App'>
-            <h2>State</h2>
+            <TodoList />
         </div>
     );
 }

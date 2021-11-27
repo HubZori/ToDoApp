@@ -1,16 +1,26 @@
-import {useState} from 'react'
+import React, {useState} from 'react';
+import './TodoInput.css'
 
-
-function TodoInput = () => {
+const TodoInput = ({createTodo}) => {
     const [task, setTask] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        addTask(task)
-        setTask('')
 
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        createTodo(task);
+        setTask('')
+    };
+
+    const handleChange = (e) => {
+        setTask(e.target.value)
     }
 
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSubmit(e)
+        }
+    }
     return(
         <form onSubmit={handleSubmit}>
             <input
@@ -22,7 +32,9 @@ function TodoInput = () => {
                 onKeyDown={handleKeyPress}
                 placeholder='какие планы'
             />
-            <button>добавить</button>
+            <button disabled={!task}>добавить</button>
         </form>
     )
 }
+
+export default TodoInput

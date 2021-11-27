@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e13fad-655b-4640-b110-c253af7cefa4" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commponent/TodoInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/root-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commponent/Todo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commponent/Todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commponent/TodoList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commponent/TodoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoInput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commponent/TodoInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commponent/TodoInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +51,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/commponent/TodoList.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/commponent/Todo.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/redux/store.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/redux/actionTypes.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/ToDoForm.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/redux/reducer.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20Xa0qxsqeVX6T8r82eykv3PhAd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -63,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/commponent" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -71,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\commponent" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\redux" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src\redux\modules" />
       <recent name="C:\Users\babay\Desktop\ZZ\my-app1\src" />
@@ -103,7 +109,9 @@
       <workItem from="1637313148958" duration="6000" />
       <workItem from="1637349227101" duration="95000" />
       <workItem from="1637750532162" duration="19232000" />
-      <workItem from="1637832765120" duration="14370000" />
+      <workItem from="1637832765120" duration="20866000" />
+      <workItem from="1637921138482" duration="25326000" />
+      <workItem from="1638010744633" duration="7251000" />
     </task>
     <servers />
   </component>
