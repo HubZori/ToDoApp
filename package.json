@@ -1,17 +1,15 @@
 {
-  "name": "my-app1",
+  "name": "to-do-app1.0",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@mui/material": "^5.2.1",
-    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "prettier-eslint": "^13.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
     "react-scripts": "4.0.3",
-    "react-transition-group": "^4.4.2",
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
     "web-vitals": "^1.1.2"
@@ -41,26 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@mui/icons-material": "^5.2.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^19.0.1",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "2.5.0",
-    "react-redux": "^7.2.6"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HubZori/ToDoList.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HubZori/ToDoList/issues"
-  },
-  "homepage": "https://github.com/HubZori/ToDoList#readme"
+    "eslint": "^7.32.0"
+  }
 }
