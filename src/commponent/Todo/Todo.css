@@ -1,17 +1,15 @@
 .todo {
   display: flex;
-  margin: 0px 20px 0px 10pxn;
   padding: 1.1rem 0rem;
   height: 20px;
-  width: 40em;
   background: rgba(255, 255, 255, 0.2);
   position: relative;
   transition: opacity 500ms ease-in-out;
   align-items: center;
   justify-content: space-between;
-  align-content: space-between;
   border-radius: 20px 20px 20px 20px;
 }
+
 .todo_task {
   display: flex;
   cursor: default;
@@ -29,16 +27,6 @@
   transition-delay: 200ms;
   opacity: 0.5;
 }
-
-/* .todo.complated .todo_task:before {
-  position: absolute;
-  top: 50%;
-  left: -0.5rem;
-  display: block;
-  width: 0%;
-  height: 40px;
-  background: #fff;
-} */
 
 @keyframes strikeitem {
   to {
