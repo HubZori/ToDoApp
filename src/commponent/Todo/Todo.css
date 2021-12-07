@@ -20,6 +20,7 @@
   justify-content: space-around;
   width: 17px;
   height: 17px;
+  word-break: break-all;
 }
 
 .todo.complated {
