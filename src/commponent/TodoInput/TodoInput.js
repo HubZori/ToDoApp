@@ -20,7 +20,7 @@ const TodoInput = ({ createTodo }) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="toDoInputForm" onSubmit={handleSubmit}>
       <input
         id="task"
         name="task"

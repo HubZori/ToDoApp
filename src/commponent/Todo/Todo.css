@@ -1,6 +1,7 @@
 .todo {
   display: flex;
   padding: 1.1rem 0rem;
+
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   position: relative;
@@ -8,6 +9,14 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 20px 20px 20px 20px;
+}
+
+@media screen and (max-width: 350px) {
+  .todo {
+    flex-direction: column;
+    padding: 12px 0px;
+    height: 106px;
+  }
 }
 
 .todo_task {
@@ -38,7 +47,8 @@
 .todo_buttons {
   flex-shrink: 0;
   padding-left: 0.7em;
-  margin-left: auto;
+  /* margin */
+  -left: auto;
 }
 
 .todo_buttons__edit {
