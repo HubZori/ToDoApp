@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Todo.css";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import EditIcon from "@mui/icons-material/Edit";
 
 const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
   const [isEdit, setIsEdit] = useState(false);
@@ -40,10 +42,10 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
 
       <div className="todo_buttons">
         <div className="todo_buttons__edit" onClick={() => setIsEdit(true)}>
-          редактировать
+          <EditIcon />
         </div>
         <div className="todo_buttons__remove" onClick={removeTodo}>
-          удалить
+          <DeleteOutlineIcon />
         </div>
       </div>
     </div>

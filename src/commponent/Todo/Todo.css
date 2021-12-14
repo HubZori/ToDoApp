@@ -45,8 +45,9 @@
 }
 
 .todo_buttons {
+  display: flex;
   flex-shrink: 0;
-  padding-left: 0.7em;
+
   /* margin */
   -left: auto;
 }

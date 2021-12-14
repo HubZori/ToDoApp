@@ -1,6 +1,7 @@
 .app {
   max-width: 790px;
-  margin: 4rem auto;
+  margin: auto;
+  margin-top: 5rem;
   text-align: center;
   max-height: 790px;
   padding: 2rem 3rem 3rem;
