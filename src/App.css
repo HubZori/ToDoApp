@@ -27,9 +27,9 @@
   color: #ffffff;
 
   background: linear-gradient(
-    90deg,
-    rgb(12, 146, 255) 0%,
-    rgb(187, 27, 15) 100%
+    318deg,
+    rgba(167, 170, 172, 0.87) 0%,
+    rgb(119, 113, 113) 100%
   );
 
   text-transform: capitalize;
@@ -37,8 +37,8 @@
 .app button:hover {
   color: rgb(235, 235, 235);
   background: linear-gradient(
-    90deg,
-    rgb(187, 27, 15) 0%,
-    rgb(12, 146, 255) 100%
+    318deg,
+    rgb(119, 113, 113) 0%,
+    rgba(167, 170, 172, 0.87) 100%
   );
 }

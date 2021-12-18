@@ -19,6 +19,17 @@
   }
 }
 
+.todo form {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 500px) {
+  .todo form {
+    flex-direction: column;
+    padding: 12px 0px;
+  }
+}
+
 .todo_task {
   display: flex;
   cursor: default;
@@ -47,8 +58,6 @@
 .todo_buttons {
   display: flex;
   flex-shrink: 0;
-
-  /* margin */
   -left: auto;
 }
 
