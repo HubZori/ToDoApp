@@ -11,12 +11,22 @@
   overflow: hidden;
 }
 
-.app input {
+.app textarea {
+  resize: none;
+  overflow: auto;
+
   padding: 14px 32px 14px 16px;
   max-height: 14px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 14px 0 0 14px;
   border: 2px solid #be9ffc;
   outline: none;
+}
+textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(42, 110, 141);
 }
 
 .app button {

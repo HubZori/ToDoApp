@@ -17,11 +17,13 @@ const TodoInput = ({ createTodo }) => {
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && e.target.value !== "") {
       handleSubmit(e);
+    } else if (e.key === "Enter" && !e.target.value !== "") {
+      e.preventDefault();
     }
   };
   return (
     <form className="toDoInputForm" onSubmit={handleSubmit}>
-      <input
+      <textarea
         id="task"
         name="task"
         type="text"

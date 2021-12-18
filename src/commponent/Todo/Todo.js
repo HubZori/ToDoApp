@@ -13,15 +13,25 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
     setIsEdit(false);
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter" && e.target.value !== "") {
+      updateTodo(id, editTask);
+      setIsEdit(false);
+    } else if (e.key === "Enter" && !e.target.value !== "") {
+      e.preventDefault();
+    }
+  };
+
   return (
     <div className={completed ? "todo complated" : "todo"}>
       {isEdit ? (
         <div key="edit" timeout={500}>
           {
             <form onSubmit={handleUpdate}>
-              <input
+              <textarea
                 type="text"
                 name="task"
+                onKeyDown={handleKeyPress}
                 value={editTask}
                 onChange={(e) => setEditTask(e.target.value)}
               />

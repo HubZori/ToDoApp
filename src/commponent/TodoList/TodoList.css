@@ -40,4 +40,7 @@ ul {
 }
 div {
   padding: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
