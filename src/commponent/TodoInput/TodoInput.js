@@ -28,7 +28,7 @@ const TodoInput = ({ createTodo }) => {
         name="task"
         type="text"
         value={task}
-        maxlength="50"
+        maxLength="50"
         onChange={handleChange}
         onKeyDown={handleKeyPress}
         placeholder="какие планы"

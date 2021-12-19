@@ -33,7 +33,7 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
                 name="task"
                 onKeyDown={handleKeyPress}
                 value={editTask}
-                maxlength="50"
+                maxLength="50"
                 onChange={(e) => setEditTask(e.target.value)}
               />
               <button disabled={!editTask}>сохранить</button>
