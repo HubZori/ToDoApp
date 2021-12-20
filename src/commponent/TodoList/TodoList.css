@@ -20,7 +20,7 @@
     transform: rotate(360deg);
   }
 }
-ul {
+/* ul {
   padding: 0;
 }
 div {
@@ -28,4 +28,4 @@ div {
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-line-clamp: 2;
-}
+} */
