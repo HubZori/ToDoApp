@@ -9,7 +9,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .todolist_logo {
-    animation: todolist_logo-spin infinite 40s linear;
+    animation: todolist_logo-spin infinite 20s linear;
   }
 }
 @keyframes todolist_logo-spin {
