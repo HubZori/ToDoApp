@@ -28,24 +28,22 @@ const TodoList = () => {
       <h1>Список задач: {state.todos.length}</h1>
       <TodoInput createTodo={create} />
       <ul>
-        <div>
-          {state.todos &&
-            state.todos.map((todo) => {
-              return (
-                <div key={todo.id}>
-                  <Todo
-                    key={todo.id}
-                    id={todo.id}
-                    task={todo.task}
-                    completed={todo.completed}
-                    toggleTodo={() => dispatch(completeTodo(todo))}
-                    removeTodo={() => dispatch(removeTodo(todo))}
-                    updateTodo={update}
-                  />
-                </div>
-              );
-            })}
-        </div>
+        {state.todos &&
+          state.todos.map((todo) => {
+            return (
+              <div key={todo.id}>
+                <Todo
+                  key={todo.id}
+                  id={todo.id}
+                  task={todo.task}
+                  completed={todo.completed}
+                  toggleTodo={() => dispatch(completeTodo(todo))}
+                  removeTodo={() => dispatch(removeTodo(todo))}
+                  updateTodo={update}
+                />
+              </div>
+            );
+          })}
       </ul>
     </div>
   );

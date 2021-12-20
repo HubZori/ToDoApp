@@ -1,57 +1,39 @@
 .todo {
   display: flex;
-  margin: 0px 20px 0px 10pxn;
   padding: 1.1rem 0rem;
   height: 20px;
-  width: 40em;
   background: rgba(255, 255, 255, 0.2);
   position: relative;
   transition: opacity 500ms ease-in-out;
   align-items: center;
   justify-content: space-between;
-  align-content: space-between;
   border-radius: 20px 20px 20px 20px;
+}
+.todo form {
+  display: flex;
+  flex-direction: row;
 }
 .todo_task {
   display: flex;
   cursor: default;
 }
-
 .todo_task__input {
   cursor: pointer;
   justify-content: space-around;
   width: 17px;
   height: 17px;
+  word-break: break-all;
 }
-
 .todo.complated {
   transition: opacity 300ms ease-in-out;
   transition-delay: 200ms;
   opacity: 0.5;
 }
-
-/* .todo.complated .todo_task:before {
-  position: absolute;
-  top: 50%;
-  left: -0.5rem;
-  display: block;
-  width: 0%;
-  height: 40px;
-  background: #fff;
-} */
-
-@keyframes strikeitem {
-  to {
-    width: calc(100% + 1rem);
-  }
-}
-
 .todo_buttons {
+  display: flex;
   flex-shrink: 0;
-  padding-left: 0.7em;
-  margin-left: auto;
+  -left: auto;
 }
-
 .todo_buttons__edit {
   cursor: pointer;
 }
