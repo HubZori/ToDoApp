@@ -1,18 +1,32 @@
 .todo {
   display: flex;
-  padding: 1.1rem 0rem;
-  height: 20px;
+  padding: 0.3rem 1rem;
   background: rgba(255, 255, 255, 0.2);
   position: relative;
   transition: opacity 500ms ease-in-out;
   align-items: center;
   justify-content: space-between;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 10px 10px 10px 10px;
 }
+
+@media screen and (max-width: 440px) {
+  .todo {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
 .todo form {
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 440px) {
+  .todo form {
+    flex-direction: column;
+  }
+}
+
 .todo_task {
   display: flex;
   cursor: default;
@@ -30,13 +44,15 @@
   opacity: 0.5;
 }
 .todo_buttons {
+  justify-content: center;
   display: flex;
   flex-shrink: 0;
-  -left: auto;
 }
 .todo_buttons__edit {
   cursor: pointer;
+  box-shadow: 3px 3px 3px -2px #795548;
 }
 .todo_buttons__remove {
   cursor: pointer;
+  box-shadow: 3px 3px 3px -2px #795548;
 }

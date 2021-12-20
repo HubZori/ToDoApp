@@ -27,7 +27,7 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
       {isEdit ? (
         <div key="edit" timeout={500}>
           {
-            <form onSubmit={handleUpdate}>
+            <form className="todo_form" onSubmit={handleUpdate}>
               <textarea
                 type="text"
                 name="task"
