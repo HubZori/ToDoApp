@@ -1,4 +1,5 @@
 .app {
+  display: flex;
   max-width: 790px;
   margin: auto;
   margin-top: 3rem;
@@ -9,6 +10,8 @@
   background: #7d628d;
   color: rgb(246, 245, 248);
   overflow: hidden;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 .app textarea {
   resize: none;
