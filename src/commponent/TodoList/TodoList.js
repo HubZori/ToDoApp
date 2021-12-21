@@ -31,7 +31,7 @@ const TodoList = () => {
         {state.todos &&
           state.todos.map((todo) => {
             return (
-              <div key={todo.id}>
+              <div className="todolist__div" key={todo.id}>
                 <Todo
                   key={todo.id}
                   id={todo.id}

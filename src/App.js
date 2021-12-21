@@ -1,28 +1,41 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
+
 import "./App.css";
 import { useSelector } from "react-redux";
 import TodoList from "./commponent/TodoList/TodoList";
-import { Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
 
-function App() {
+
+import AppNav from "./commponent/Navbar/AppNav";
+import login from "./commponent/login/login";
+
+const App = (props) => {
   const state = useSelector((state) => ({ ...state }));
   return (
-    <div>
-      <nav
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          paddingBottom: "1rem",
-          justifyContent: "center",
-          background: "#8888",
-        }}
-      >
-        <Link to="/invoices">Invoices</Link> |
-        <Link to="/expenses">Expenses</Link>|<Link to="/login">login</Link>
-      </nav>
+    <Router>
       <div className="app">
-        <TodoList state={state} />
+        <AppNav />
+
+        <div className="app__content">
+
+          <Routes>
+            <Route path="/todolist" element={<TodoList className="todo__list" state={state} />} />
+          </Routes>
+          <Routes>
+            <Route path="/login" element={<login />} />
+          </Routes>
+
+        </div>
+
       </div>
-    </div>
+    </Router >
   );
-}
+};
 export default App;
