@@ -1,17 +1,13 @@
-import { NavLink } from "react-router-dom";
-import "../Navbar/AppNav.css";
+import c from "./AppNav.module.css"
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
 
 const AppNav = () => {
   return (
-    <nav className="navBar">
-      <div className="item">
-        <NavLink to="/Todolist" activeClassName="activeLink">
-          <span>todolist</span>
-        </NavLink>
-        <NavLink to="/login">login</NavLink>
-        <NavLink to="/registration">registration</NavLink>
-      </div>
-    </nav>
+    <div className={c.NavBar}>
+      <MobileNavigation />
+      <Navigation />
+    </div>
   );
 };
 
