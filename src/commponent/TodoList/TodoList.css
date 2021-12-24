@@ -1,13 +1,12 @@
-.todo__list {
+.todolist {
   max-width: 790px;
   margin: auto;
   text-align: center;
   padding: 2rem 3rem 3rem;
-  box-shadow: 5px 10px 8px 10px #9e8f8f;
-  background: #7d628d;
+  background: #0e3828;
   color: rgb(246, 245, 248);
 }
-.todo__list textarea {
+.todolist textarea {
   resize: none;
   overflow: auto;
   padding: 14px 32px 14px 16px;
@@ -19,7 +18,7 @@
 textarea::-webkit-scrollbar {
   width: 0px;
 }
-.todo__list button {
+.todolist button {
   text-align: center;
   padding: 16px 7px;
   border: none;
@@ -32,7 +31,7 @@ textarea::-webkit-scrollbar {
   );
   text-transform: capitalize;
 }
-.todo__list button:hover {
+.todolist button:hover {
   color: rgb(235, 235, 235);
   background: linear-gradient(
     318deg,

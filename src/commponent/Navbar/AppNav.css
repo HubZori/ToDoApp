@@ -1,0 +1,15 @@
+.navBar {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  justify-content: center;
+  background: #8888;
+}
+.item {
+  flex-direction: column;
+    display: flex;
+}
+.item span {
+  width: 25px;
+  height: 10px;
+}

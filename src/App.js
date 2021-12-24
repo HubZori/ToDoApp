@@ -6,15 +6,13 @@ import { useSelector } from "react-redux";
 import TodoList from "./commponent/TodoList/TodoList";
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link,
   Routes
 } from "react-router-dom";
-
+import LoginForm from "./commponent/login/loginForm";
 
 import AppNav from "./commponent/Navbar/AppNav";
-import login from "./commponent/login/login";
+import Registration from "./commponent/registration/registration";
 
 const App = (props) => {
   const state = useSelector((state) => ({ ...state }));
@@ -26,10 +24,13 @@ const App = (props) => {
         <div className="app__content">
 
           <Routes>
-            <Route path="/todolist" element={<TodoList className="todo__list" state={state} />} />
+            <Route path="/todolist" element={<TodoList state={state} />} />
           </Routes>
           <Routes>
-            <Route path="/login" element={<login />} />
+            <Route path="/login" element={<LoginForm />} />
+          </Routes>
+          <Routes>
+            <Route path="/registration" element={<Registration />} />
           </Routes>
 
         </div>

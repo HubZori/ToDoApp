@@ -1,20 +1,18 @@
 .app {
   display: flex;
-  height: 100vh;
+  flex-grow: 1;
   flex-direction: row-reverse;
   background: #dcdcdc;
+  justify-content: space-between;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
 }
 
-.navBar {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
-  justify-content: center;
-  background: #8888;
-}
+
 
 
 .app__content {
-  background-color: #0e3828;
+  width: -webkit-fill-available;
+    background-color: #0e3828;
 
 }
