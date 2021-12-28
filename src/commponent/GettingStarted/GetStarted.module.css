@@ -1,0 +1,22 @@
+.Background {
+  height: 100vh;
+  /*  background: url("../../img/1.png"); */
+  background: linear-gradient(180deg, #000032, #0000a0);
+  width: 100%;
+  background-size: cover;
+}
+
+.Logo {
+  width: 127rem;
+  height: 8rem;
+}
+.Background h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.7;
+}
+.LogoContainer {
+  display: flex;
+  flex-direction: column;
+}

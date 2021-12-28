@@ -9,12 +9,12 @@ const MobileNavigation = () => {
 
     const [open, setOpen] = useState(false);
 
-    const hamburgerIcon = <MenuIcon className={c.Hamburger} size='40px' color='white'
+    const hamburgerIcon = <MenuIcon className={c.Hamburger}
         onClick={() => setOpen(!open)} />
 
 
 
-    const closeIcon = <CloseIcon className={c.Hamburger} size='40px' color='white'
+    const closeIcon = <CloseIcon className={c.Hamburger}
         onClick={() => setOpen(!open)} />
 
 

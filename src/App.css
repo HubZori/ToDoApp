@@ -1,18 +1,21 @@
 .app {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  flex-grow: 1;
-  flex-direction: row-reverse;
-  background: #dcdcdc;
-  justify-content: space-between;
-  box-shadow: 16px 14px 20px #0000008c;
-  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
-
-
-
 .app__content {
+  flex: 1 0 auto;
   width: -webkit-fill-available;
-    background-color: #0e3828;
+  background: linear-gradient(180deg, #000032, #0000a0);
+  box-shadow: 16px 14px 20px #0000008c;
+  height: 100%;
+}
 
+.content_wrap {
+  height: 100vh;
+  flex: 1;
 }

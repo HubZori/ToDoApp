@@ -1,4 +1,4 @@
-import '../login/loginForm.css'
+import './LoginForm.css'
 
 const LoginForm = (props) => {
     return <div className="login-wrapper">

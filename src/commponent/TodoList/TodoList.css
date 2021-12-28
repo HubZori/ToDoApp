@@ -1,10 +1,10 @@
 .todolist {
   max-width: 790px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   padding: 2rem 3rem 3rem;
-  background: #0e3828;
-  color: rgb(246, 245, 248);
+  color: #61dafb;
+  padding-top: 80px;
 }
 .todolist textarea {
   resize: none;
@@ -48,12 +48,15 @@ textarea::-webkit-scrollbar {
 .todolist_logo {
   height: 15vmin;
   pointer-events: none;
+
+  /* logo animation */
 }
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .todolist_logo {
     animation: todolist_logo-spin infinite 20s linear;
   }
-}
+} 
+
 @keyframes todolist_logo-spin {
   from {
     transform: rotate(0deg);
@@ -62,6 +65,7 @@ textarea::-webkit-scrollbar {
     transform: rotate(360deg);
   }
 }
+*/
 
 ul {
   padding: 0;

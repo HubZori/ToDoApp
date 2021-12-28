@@ -1,4 +1,4 @@
-import '../registration/registration.css'
+import './Registration.css'
 
 const Registration = (props) => {
     return <div className="registration-wrapper">

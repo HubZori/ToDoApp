@@ -1,0 +1,31 @@
+.mainFooter {
+  color: white;
+  background-color: #00009f;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.mainFooter hr {
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.listStyled {
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
+.listStyled li {
+  list-style: none;
+  font-size: 10px;
+}
+.sm {
+  font-size: 10px;
+}
+.col h5 {
+  margin-bottom: 0px;
+  margin-top: 3px;
+}

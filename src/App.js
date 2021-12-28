@@ -9,34 +9,40 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import LoginForm from "./commponent/login/loginForm";
+import LoginForm from "./commponent/Login/LoginForm";
 
 import AppNav from "./commponent/Navbar/AppNav";
-import Registration from "./commponent/registration/registration";
+import Registration from "./commponent/Registration/Registration";
+import GetStarted from "./commponent/GettingStarted/GetStarted";
+import Footer from "./commponent/Footer/Footer";
 
 const App = (props) => {
   const state = useSelector((state) => ({ ...state }));
   return (
-    <Router>
-      <div className="app">
-        <AppNav />
+    <div className="app">
+      <div className="content_wrap">
 
-        <div className="app__content">
 
-          <Routes>
-            <Route path="/todolist" element={<TodoList state={state} />} />
-          </Routes>
-          <Routes>
-            <Route path="/login" element={<LoginForm />} />
-          </Routes>
-          <Routes>
-            <Route path="/registration" element={<Registration />} />
-          </Routes>
-
-        </div>
-
+        <Router >
+          <AppNav />
+          <div className="app__content">
+            <Routes>
+              <Route path="/" element={<GetStarted />} />
+            </Routes>
+            <Routes>
+              <Route path="/todolist" element={<TodoList state={state} />} />
+            </Routes>
+            <Routes>
+              <Route path="/login" element={<LoginForm />} />
+            </Routes>
+            <Routes>
+              <Route path="/registration" element={<Registration />} />
+            </Routes>
+          </div>
+        </Router >
       </div>
-    </Router >
+      <Footer />
+    </div>
   );
 };
 export default App;

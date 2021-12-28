@@ -24,7 +24,9 @@ const TodoList = () => {
 
   return (
     <div className="todolist">
-      <img src={logo} className="todolist_logo" alt="logo" />
+      <div>
+        <img src={logo} className="todolist_logo" alt="logo" />
+      </div>
       <h1>Список задач: {state.todos.length}</h1>
       <TodoInput createTodo={create} />
       <ul>
