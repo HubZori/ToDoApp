@@ -9,7 +9,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import LoginForm from "./commponent/Login/LoginForm";
+import LoginForm from "./commponent/Login/loginForm";
 
 import AppNav from "./commponent/Navbar/AppNav";
 import Registration from "./commponent/Registration/Registration";

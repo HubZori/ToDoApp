@@ -3,41 +3,41 @@
   margin: 0 auto;
   text-align: center;
   padding: 2rem 3rem 3rem;
-  color: #61dafb;
   padding-top: 80px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
 }
 .todolist textarea {
   resize: none;
   overflow: auto;
+  border-radius: 3px;
   padding: 14px 32px 14px 16px;
-  max-height: 14px;
-  border-radius: 7px 0 0 7px;
-  border: 2px solid #be9ffc;
+  max-height: 17px;
   outline: none;
+  background-color: rgba(255, 255, 255, 0.07);
+  font-size: 14px;
+  color: #fff;
+  border: none;
 }
 textarea::-webkit-scrollbar {
   width: 0px;
 }
 .todolist button {
   text-align: center;
-  padding: 16px 7px;
   border: none;
-  border-radius: 0 4px 4px 0;
-  color: #ffffff;
-  background: linear-gradient(
-    318deg,
-    rgba(167, 170, 172, 0.87) 0%,
-    rgb(119, 113, 113) 100%
-  );
+  border-radius: 5px;
+  color: #080710;
+  background: linear-gradient(318deg, #fff 0%, rgb(119, 113, 113) 100%);
   text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
 }
 .todolist button:hover {
-  color: rgb(235, 235, 235);
-  background: linear-gradient(
-    318deg,
-    rgb(119, 113, 113) 0%,
-    rgba(167, 170, 172, 0.87) 100%
-  );
+  color: #080710;
+  background: linear-gradient(318deg, rgb(119, 113, 113) 0%, #fff 100%);
 }
 
 .todolist h1 {
