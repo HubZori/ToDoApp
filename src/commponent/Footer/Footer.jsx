@@ -4,38 +4,28 @@ const Footer = () => {
   return (
     <div className={c.mainFooter}>
       <div className={c.container}>
-        <hr />
-        <div className={c.row}>
-          <div className={c.col}>
-            <h5>THICC MEMES INC</h5>
-            <ul className={c.listStyled}>
-              <li>342-420-6969</li>
-              <li>Moscow, Russia</li>
-              <li>123 Streeet South North</li>
-            </ul>
+        <div className={c.footerDiv}>
+          <div className={c.footerCopyright}>
+            "Made by"
+            <a href="/#0">Cruip</a>
+            ". All right reserved"
           </div>
-          <div className={c.col}>
-            <h5>Stuff</h5>
-            <ul className={c.listStyled}>
-              <li>DANK MEMES</li>
-              <li>OTHER STUFF</li>
-              <li>GUD STUFF</li>
+          <nav className={c.footerNav}>
+            <ul className={c.list}>
+              <li>
+                <a href="/#0">Contact</a>
+              </li>
+              <li>
+                <a href="/#0">About us</a>
+              </li>
+              <li>
+                <a href="/#0">FAQ's</a>
+              </li>
+              <li>
+                <a href="/#0">Support</a>
+              </li>
             </ul>
-          </div>
-          <div className={c.col}>
-            <h5>WELL ANOTHER COLUMN</h5>
-            <ul className={c.listStyled}>
-              <li>DANK MEMES</li>
-              <li>OTHER STUFF</li>
-              <li>GUD STUFF</li>
-            </ul>
-          </div>
-        </div>
-        <div className={c.row}>
-          <p className={c.sm}>
-            &copy;{new Date().getFullYear()} THICC MEMES | All rights reserved |
-            Terms Of Service | Privacy
-          </p>
+          </nav>
         </div>
       </div>
     </div>

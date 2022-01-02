@@ -1,22 +1,87 @@
-.Background {
+.heroSection {
   height: 100vh;
-  /*  background: url("../../img/1.png"); */
-  background: linear-gradient(180deg, #000032, #0000a0);
-  width: 100%;
+  padding-top: 80px;
+  background: url(../../img/forest.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
-.Logo {
-  width: 127rem;
-  height: 8rem;
+.heroSection h1 {
+  text-align: center;
+  display: block;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 800;
+  clear: both;
+  color: #eceded;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0.67em 0;
 }
-.Background h2 {
-  margin: 0;
-  font-size: 24px;
-  color: #fff;
-  line-height: 1.7;
-}
-.LogoContainer {
+.heroContainer {
   display: flex;
   flex-direction: column;
+}
+.heroContent {
+  box-sizing: inherit;
+}
+.heroContent p {
+  margin: 0;
+  margin-bottom: 32px;
+  color: #9ca9b3;
+  font-size: 20px;
+  line-height: 30px;
+  filter: none;
+}
+.heroContent span {
+  color: #5658dd;
+}
+
+.containerXs {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.buttonGroup {
+  justify-content: center;
+  margin-bottom: -8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+.buttonGroup a {
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  padding: 11px 31px;
+  margin: 8px;
+  height: 27px;
+  text-decoration: none !important;
+  color: #25282c;
+  background-color: #eceded;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+.buttonGroup :first-child {
+  color: #eceded;
+  background-color: #6163ff;
+}
+.buttonGroup :last-child {
+  color: #fff;
+  background: #25282c;
 }

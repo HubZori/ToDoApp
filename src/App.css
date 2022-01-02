@@ -10,9 +10,11 @@
 .app__content {
   flex: 1 0 auto;
   width: -webkit-fill-available;
-  background: linear-gradient(180deg, #000032, #0000a0);
-  box-shadow: 16px 14px 20px #0000008c;
-  height: 100vh;
+  /*   background: linear-gradient(180deg, #000032, #0000a0);
+ */
+
+  /*  padding-left: 24px;
+  padding-right: 24px; */
 }
 
 .content_wrap {

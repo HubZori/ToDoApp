@@ -12,17 +12,17 @@ const NavLinks = (props) => {
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
                 <NavLink to="/Todolist" className={c.link}>
-                    todolist
+                    Todolist
                 </NavLink>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
                 <NavLink to="/login" className={c.link}>
-                    login
+                    Login
                 </NavLink>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
                 <NavLink to="/registration" className={c.link}>
-                    registration
+                    Registration
                 </NavLink>
             </li>
         </ul>

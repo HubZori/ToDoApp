@@ -30,14 +30,14 @@ textarea::-webkit-scrollbar {
   border: none;
   border-radius: 5px;
   color: #080710;
-  background: linear-gradient(318deg, #fff 0%, rgb(119, 113, 113) 100%);
+  background: #ffffff8f;
   text-transform: capitalize;
   font-weight: 600;
   cursor: pointer;
 }
 .todolist button:hover {
-  color: #080710;
-  background: linear-gradient(318deg, rgb(119, 113, 113) 0%, #fff 100%);
+  color: #fff;
+  background: #080710;
 }
 
 .todolist h1 {

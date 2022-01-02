@@ -21,8 +21,6 @@ const App = (props) => {
   return (
     <div className="app">
       <div className="content_wrap">
-
-
         <Router >
           <AppNav />
           <div className="app__content">
