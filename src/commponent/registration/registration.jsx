@@ -1,5 +1,5 @@
 import c from "./Registration.module.css";
-
+import Button from "../../elements/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 
@@ -22,16 +22,20 @@ const Registration = (props) => {
         <input type="text" placeholder="Username" id="username" />
         <label for="password">New Password</label>
         <input type="password" placeholder="New password" id="password" />
-        <button className={c.loginButton}>Sing Up</button>
+        <Button>Sing Up</Button>
         <div className={c.social}>
-          <div className={c.go}>
-            <i>
-              <GoogleIcon />
-            </i>
-          </div>
-          <div className={c.fb}>
-            <i></i> <FacebookIcon />
-          </div>
+          <ul className={c.ul}>
+            <li>
+              <a href="/#0">
+                <GoogleIcon />
+              </a>
+            </li>
+            <li>
+              <a href="/#0">
+                <FacebookIcon />
+              </a>
+            </li>
+          </ul>
         </div>
       </form>
     </div>

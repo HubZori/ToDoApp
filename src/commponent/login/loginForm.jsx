@@ -1,4 +1,5 @@
 import c from "./LoginForm.module.css";
+import Button from "../../elements/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 
@@ -15,16 +16,20 @@ const LoginForm = (props) => {
         <input type="text" placeholder="Email or Phone" id="username" />
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password" />
-        <button className={c.loginButton}>Log In</button>
+        <Button>Log In</Button>
         <div className={c.social}>
-          <div className={c.go}>
-            <i>
-              <GoogleIcon />
-            </i>
-          </div>
-          <div className={c.fb}>
-            <i></i> <FacebookIcon />
-          </div>
+          <ul className={c.ul}>
+            <li>
+              <a href="/#0">
+                <GoogleIcon />
+              </a>
+            </li>
+            <li>
+              <a href="/#0" disabled>
+                <FacebookIcon />
+              </a>
+            </li>
+          </ul>
         </div>
       </form>
     </div>

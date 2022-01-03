@@ -22,7 +22,8 @@
 }
 
 .link:hover {
-  border-bottom: 3px solid #8c1cd1;
+  color: #8c1cd1;
+  transition: 0.25s;
 }
 
 .NavBar .MobileNavigation {
@@ -42,6 +43,9 @@
     cursor: pointer;
     color: white;
   }
+  .NavBar .MobileNavigation .Hamburger:hover {
+    color: #8c1cd1;
+  }
 
   .NavBar nav ul {
     display: flex;
@@ -50,7 +54,7 @@
     top: 3rem;
     right: 0;
     width: 100%;
-    background: linear-gradient(180deg, #000032, #00005a);
+    background: #282c34;
     border-top: 2px solid #673ab7;
   }
 

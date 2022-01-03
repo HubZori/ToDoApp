@@ -38,6 +38,7 @@ textarea::-webkit-scrollbar {
 .todolist button:hover {
   color: #fff;
   background: #080710;
+  transition: 0.25s;
 }
 
 .todolist h1 {

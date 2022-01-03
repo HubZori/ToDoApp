@@ -14,8 +14,8 @@ const GetStarted = () => {
               to set it up once, and get beautiful results forever.
             </p>
             <div className={c.buttonGroup}>
-              <a href="/#0">Get started</a>
-              <a href="/#0">View on Github</a>
+              <a href="/Todolist">Get started</a>
+              <a href="https://github.com/HubZori/ToDoList">View on Github</a>
             </div>
           </div>
         </div>
