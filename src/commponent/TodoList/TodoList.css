@@ -49,24 +49,7 @@ textarea::-webkit-scrollbar {
 .todolist_logo {
   height: 15vmin;
   pointer-events: none;
-
-  /* logo animation */
 }
-/* @media (prefers-reduced-motion: no-preference) {
-  .todolist_logo {
-    animation: todolist_logo-spin infinite 20s linear;
-  }
-} 
-
-@keyframes todolist_logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-*/
 
 ul {
   padding: 0;

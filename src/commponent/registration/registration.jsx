@@ -1,7 +1,8 @@
 import c from "./Registration.module.css";
-import Button from "../../elements/Button";
+import Button from "../../Elements/Button/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
+import Input from "../../Elements/Input/Input";
 
 const Registration = (props) => {
   return (
@@ -12,16 +13,24 @@ const Registration = (props) => {
       </div>
       <form className={c.form}>
         <h3>New account</h3>
-        <label for="username">Contact</label>
-        <input
+        <Input
           type="text"
           placeholder="Mobile number or email address"
           id="contact"
+          label="Contact"
         />
-        <label for="username">Username</label>
-        <input type="text" placeholder="Username" id="username" />
-        <label for="password">New Password</label>
-        <input type="password" placeholder="New password" id="password" />
+        <Input
+          type="text"
+          placeholder="Username"
+          id="username"
+          label="Username"
+        />
+        <Input
+          type="password"
+          placeholder="New password"
+          id="password"
+          label="New Password"
+        />
         <Button>Sing Up</Button>
         <div className={c.social}>
           <ul className={c.ul}>
