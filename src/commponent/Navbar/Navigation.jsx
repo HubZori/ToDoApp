@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 
 const Navigation = () => {
     return (
-        <nav className={c.Navigation}>
+        <nav className={c.navigation}>
             <NavLinks />
         </nav>
     );

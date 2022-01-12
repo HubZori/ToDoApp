@@ -1,40 +1,49 @@
 
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './Input.css';
+import c from './Input.module.css';
 
 
 const Input = ({
-    id, className, label, ...attrs
+    id, name, onChange, className, label, error, required, ...attrs
 }) => {
+
+
 
     const classes = classNames(
         'input',
-        'className',
+        className,
+        { error },
     );
     return (
-        <div className='inputWrapper'>
+        <div className={c.inputWrapper}>
             {label &&
-                <label className='inputLabel' htmlFor={id}>{label}</label>}
+                <label htmlFor={id}>{label}</label>}
             <input
-                name={id}
+                onChange={onChange}
                 id={id}
+                name={name}
                 className={classes}
                 {...attrs}
             />
+            {error &&
+                <span>{error}</span>
+            }
         </div>
     )
 };
 
 Input.propTypes = {
-    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     className: PropTypes.string,
     label: PropTypes.string,
+    error: PropTypes.string,
 };
 
 Input.defaultProps = {
     className: '',
     label: '',
+    error: '',
 }
 
 export default Input;

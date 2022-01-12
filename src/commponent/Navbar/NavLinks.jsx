@@ -11,7 +11,7 @@ const NavLinks = (props) => {
                 </NavLink>
             </li>
             <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-                <NavLink to="/Todolist" className={c.link}>
+                <NavLink to="/todolist" className={c.link}>
                     Todolist
                 </NavLink>
             </li>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Todo.css";
+import c from "./Todo.module.css";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import EditIcon from "@mui/icons-material/Edit";
 
@@ -23,11 +23,11 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
   };
 
   return (
-    <div className={completed ? "todo complated" : "todo"}>
+    <div className={completed ? c.todoComplated : c.todo}>
       {isEdit ? (
         <div key="edit" timeout={500}>
           {
-            <form className="todo_form" onSubmit={handleUpdate}>
+            <form onSubmit={handleUpdate}>
               <textarea
                 type="text"
                 name="task"
@@ -41,21 +41,21 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
           }
         </div>
       ) : (
-        <div key="normal" timeout={500} className="todo_task">
+        <div key="normal" timeout={500} className={c.todoTask}>
           <input
             onClick={toggleTodo}
             type="checkbox"
-            className="todo_task__input"
+            className={c.todoTaskInput}
           />
           <div>{task}</div>
         </div>
       )}
 
-      <div className="todo_buttons">
-        <div className="todo_buttons__edit" onClick={() => setIsEdit(true)}>
+      <div className={c.todoButtons}>
+        <div className={c.todoButtonsEdit} onClick={() => setIsEdit(true)}>
           <EditIcon />
         </div>
-        <div className="todo_buttons__remove" onClick={removeTodo}>
+        <div className={c.todoButtonsRemove} onClick={removeTodo}>
           <DeleteOutlineIcon />
         </div>
       </div>

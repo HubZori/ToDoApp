@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 const AppNav = () => {
   return (
-    <div className={c.NavBar}>
+    <div className={c.navBar}>
       <Logo />
       <Navigation />
       <MobileNavigation />

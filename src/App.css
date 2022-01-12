@@ -7,17 +7,13 @@
   color: white;
 }
 
-.app__content {
-  flex: 1 0 auto;
-  width: -webkit-fill-available;
-  /*   background: linear-gradient(180deg, #000032, #0000a0);
- */
-
-  /*  padding-left: 24px;
-  padding-right: 24px; */
-}
-
-.content_wrap {
+.contentWrap {
   height: 100vh;
   flex: 1;
+}
+
+.appContent {
+  flex: 1 0 auto;
+  width: -webkit-fill-available;
+  width: 100%;
 }

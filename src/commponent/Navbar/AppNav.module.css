@@ -1,4 +1,4 @@
-.NavBar {
+.navBar {
   z-index: 999;
   display: flex;
   justify-content: space-between;
@@ -7,11 +7,11 @@
   width: 100%;
 }
 
-.NavBar nav ul {
+.navBar nav ul {
   list-style: none;
 }
 
-.NavBar nav ul li {
+.navBar nav ul li {
   margin: 1.5vw;
   display: inline-block;
 }
@@ -22,32 +22,32 @@
 }
 
 .link:hover {
-  color: #8c1cd1;
+  color: #5658dd;
   transition: 0.25s;
 }
 
-.NavBar .MobileNavigation {
+.navBar .mobileNavigation {
   display: none;
 }
 @media (max-width: 990px) {
-  .NavBar .Navigation {
+  .navBar .navigation {
     display: none;
   }
-  .NavBar .MobileNavigation {
+  .navBar .mobileNavigation {
     display: flex;
     align-items: center;
   }
-  .NavBar .MobileNavigation .Hamburger {
+  .navBar .mobileNavigation .hamburger {
     position: absolute;
     right: 5%;
     cursor: pointer;
     color: white;
   }
-  .NavBar .MobileNavigation .Hamburger:hover {
-    color: #8c1cd1;
+  .navBar .mobileNavigation .hamburger:hover {
+    color: #5658dd;
   }
 
-  .NavBar nav ul {
+  .navBar nav ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -55,19 +55,19 @@
     right: 0;
     width: 100%;
     background: #282c34;
-    border-top: 2px solid #673ab7;
+    border-top: 2px solid #5658dd;
   }
 
-  .NavBar nav ul li {
+  .navBar nav ul li {
     padding-left: 15%;
   }
 
-  .NavBar {
+  .navBar {
     opacity: 1;
   }
 
   .link:hover {
     border-bottom: none;
-    color: #673ab7;
+    color: #5658dd;
   }
 }

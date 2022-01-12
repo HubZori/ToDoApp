@@ -9,18 +9,18 @@ const MobileNavigation = () => {
 
     const [open, setOpen] = useState(false);
 
-    const hamburgerIcon = <MenuIcon className={c.Hamburger}
+    const hamburgerIcon = <MenuIcon className={c.hamburger}
         onClick={() => setOpen(!open)} />
 
 
 
-    const closeIcon = <CloseIcon className={c.Hamburger}
+    const closeIcon = <CloseIcon className={c.hamburger}
         onClick={() => setOpen(!open)} />
 
 
     const closeMobileMenu = () => setOpen(false);
     return (
-        <nav className={c.MobileNavigation}>
+        <nav className={c.mobileNavigation}>
             {open ? closeIcon : hamburgerIcon}
             {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
 

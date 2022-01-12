@@ -1,7 +1,7 @@
 .heroSection {
   height: 100vh;
   padding-top: 80px;
-  background: url(../../img/forest.jpg) no-repeat center center fixed;
+  background: url(../../Img/forest.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,12 +49,9 @@
 
 .buttonGroup {
   justify-content: center;
-  margin-bottom: -8px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: -8px;
-  margin-left: -8px;
 }
 .buttonGroup a {
   display: inline-flex;
@@ -75,18 +72,22 @@
   text-align: center;
   letter-spacing: inherit;
   white-space: nowrap;
-  transition: background 0.15s ease;
 }
 .buttonGroup :first-child {
   color: #eceded;
   background-color: #6163ff;
+}
+.buttonGroup :first-child:hover {
+  color: #5658dd;
+  background: #eceded;
+  transition: 0.25s;
 }
 .buttonGroup :last-child {
   color: #fff;
   background: #25282c;
 }
 .buttonGroup :last-child:hover {
-  color: #25282c;
-  background: #fff;
+  color: #5658dd;
+  background: #eceded;
   transition: 0.25s;
 }

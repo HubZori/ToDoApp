@@ -10,6 +10,19 @@
   outline: none;
   border: none;
 }
+
+.todolistLogo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.todolistDiv {
+  padding: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
 .todolist textarea {
   resize: none;
   overflow: auto;
@@ -46,17 +59,6 @@ textarea::-webkit-scrollbar {
   letter-spacing: 0.05em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.todolist_logo {
-  height: 15vmin;
-  pointer-events: none;
-}
-
 ul {
   padding: 0;
-}
-.todolist__div {
-  padding: 2px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
 }

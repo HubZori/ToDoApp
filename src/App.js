@@ -3,7 +3,7 @@
 
 import "./App.css";
 import { useSelector } from "react-redux";
-import TodoList from "./commponent/TodoList/TodoList";
+import TodoList from "./commponent/TodoList/TodoList.jsx";
 import {
   BrowserRouter as Router,
   Route,
@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import LoginForm from "./commponent/Login/loginForm";
 
-import AppNav from "./commponent/Navbar/AppNav";
+import AppNav from "./commponent/Navbar/AppNav.jsx";
 import Registration from "./commponent/Registration/Registration";
 import GetStarted from "./commponent/GettingStarted/GetStarted";
 import Footer from "./commponent/Footer/Footer";
@@ -20,10 +20,10 @@ const App = (props) => {
   const state = useSelector((state) => ({ ...state }));
   return (
     <div className="app">
-      <div className="content_wrap">
+      <div className="contentWrap">
         <Router >
           <AppNav />
-          <div className="app__content">
+          <div className="appContent">
             <Routes>
               <Route path="/" element={<GetStarted />} />
             </Routes>

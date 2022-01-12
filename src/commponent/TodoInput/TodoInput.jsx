@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TodoInput.css";
+import c from "./TodoInput.module.css";
 
 const TodoInput = ({ createTodo }) => {
   const [task, setTask] = useState("");
@@ -22,7 +22,7 @@ const TodoInput = ({ createTodo }) => {
     }
   };
   return (
-    <form className="toDoInputForm" onSubmit={handleSubmit}>
+    <form className={c.todoInputForm} onSubmit={handleSubmit}>
       <textarea
         id="task"
         name="task"
