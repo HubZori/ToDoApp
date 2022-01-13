@@ -15,6 +15,7 @@ import AppNav from "./commponent/Navbar/AppNav.jsx";
 import Registration from "./commponent/Registration/Registration";
 import GetStarted from "./commponent/GettingStarted/GetStarted";
 import Footer from "./commponent/Footer/Footer";
+import Profile from "./commponent/Profile/Profile";
 
 const App = (props) => {
   const state = useSelector((state) => ({ ...state }));
@@ -35,6 +36,9 @@ const App = (props) => {
             </Routes>
             <Routes>
               <Route path="/registration" element={<Registration />} />
+            </Routes>
+            <Routes>
+              <Route path="/profile" element={<Profile />} />
             </Routes>
           </div>
         </Router >
