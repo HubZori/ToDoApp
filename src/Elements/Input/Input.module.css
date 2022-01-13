@@ -14,7 +14,7 @@ label {
   color: gray;
 }
 
-span {
+.inputWrapper span {
   font-size: 12px;
   padding: 3px;
   color: red;
