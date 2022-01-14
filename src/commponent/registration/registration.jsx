@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import Input from "../../Elements/Input/Input";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Registration = () => {
   const [values, setValues] = useState({
@@ -87,16 +88,18 @@ const Registration = () => {
             onChange={onChange}
           />
         ))}
-        <Button>Sing Up</Button>
+        <Link to="/login">
+          <Button>Sing Up</Button>
+        </Link>
         <div className={c.social}>
           <ul className={c.ul}>
             <li>
-              <a href="/#0">
+              <a href="https://www.google.com">
                 <GoogleIcon />
               </a>
             </li>
             <li>
-              <a href="/#0">
+              <a href="/https://www.facebook.com">
                 <FacebookIcon />
               </a>
             </li>

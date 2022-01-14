@@ -18,16 +18,6 @@ const NavLinks = (props) => {
           Login
         </NavLink>
       </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <NavLink to="/registration" className={c.link}>
-          Registration
-        </NavLink>
-      </li>
-      <li onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <NavLink to="/profile" className={c.link}>
-          Profile
-        </NavLink>
-      </li>
     </ul>
   );
 };

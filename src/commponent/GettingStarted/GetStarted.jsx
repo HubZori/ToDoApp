@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import c from "./GetStarted.module.css";
 
 const GetStarted = () => {
@@ -14,7 +15,7 @@ const GetStarted = () => {
               to set it up once, and get beautiful results forever.
             </p>
             <div className={c.buttonGroup}>
-              <a href="/Todolist">Get started</a>
+              <Link to="/Todolist">Get started</Link>
               <a href="https://github.com/HubZori/ToDoList">View on Github</a>
             </div>
           </div>

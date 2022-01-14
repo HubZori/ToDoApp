@@ -28,27 +28,27 @@ const Profile = () => {
           <div className={c.socialIcon}>
             <ul className={c.ul}>
               <li className={c.item1}>
-                <a href="/#0">
+                <a href="https://www.google.com/intl/ru/gmail/about">
                   <GoogleIcon />
                 </a>
               </li>
               <li className={c.item2}>
-                <a href="/#0">
+                <a href="https://www.facebook.com/">
                   <FacebookIcon />
                 </a>
               </li>
               <li className={c.item3}>
-                <a href="/#0">
+                <a href="https://twitter.com/">
                   <TwitterIcon />
                 </a>
               </li>
               <li className={c.item4}>
-                <a href="/#0">
+                <a href="https://www.instagram.com/">
                   <InstagramIcon />
                 </a>
               </li>
               <li className={c.item5}>
-                <a href="/#0">
+                <a href="">
                   <LocalPhoneRoundedIcon />
                 </a>
               </li>

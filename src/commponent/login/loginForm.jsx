@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import Input from "../../Elements/Input/Input";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginForm = (props) => {
   const [values, setValues] = useState({
@@ -41,10 +42,6 @@ const LoginForm = (props) => {
   console.log(values);
   return (
     <div className={c.loginWrapper}>
-      <div class={c.background}>
-        <div class={c.shape}></div>
-        <div class={c.shape}></div>
-      </div>
       <form className={c.form} onSubmit={handleSubmit}>
         <h3>Login Here</h3>
         {inputs.map((input) => (
@@ -55,16 +52,23 @@ const LoginForm = (props) => {
             onChange={onChange}
           />
         ))}
-        <Button>Log In</Button>
+        <Link to="/profile">
+          <Button>Log In</Button>
+        </Link>
+        <ul class={c.singUpBtn}>
+          <li>
+            <Link to="/registration">Sing Up</Link>
+          </li>
+        </ul>
         <div className={c.social}>
           <ul className={c.ul}>
             <li>
-              <a href="/#0">
+              <a href="https://www.google.com">
                 <GoogleIcon />
               </a>
             </li>
             <li>
-              <a href="/#0" disabled>
+              <a href="https://www.facebook.com" disabled>
                 <FacebookIcon />
               </a>
             </li>
