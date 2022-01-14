@@ -1,4 +1,4 @@
-import c from "./LoginForm.module.css";
+import s from "./LoginForm.module.css";
 import Button from "../../elements/Button/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
@@ -39,10 +39,10 @@ const LoginForm = (props) => {
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
-  console.log(values);
+
   return (
-    <div className={c.loginWrapper}>
-      <form className={c.form} onSubmit={handleSubmit}>
+    <div className={s.loginWrapper}>
+      <form className={s.form} onSubmit={handleSubmit}>
         <h3>Login Here</h3>
         {inputs.map((input) => (
           <Input
@@ -55,13 +55,13 @@ const LoginForm = (props) => {
         <Link to="/profile">
           <Button>Log In</Button>
         </Link>
-        <ul class={c.singUpBtn}>
+        <ul class={s.singUpBtn}>
           <li>
             <Link to="/registration">Sing Up</Link>
           </li>
         </ul>
-        <div className={c.social}>
-          <ul className={c.ul}>
+        <div className={s.social}>
+          <ul className={s.ul}>
             <li>
               <a href="https://www.google.com">
                 <GoogleIcon />

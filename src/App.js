@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-
 import "./App.css";
 import { useSelector } from "react-redux";
 import TodoList from "./components/TodoList/TodoList.jsx";

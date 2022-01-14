@@ -1,4 +1,4 @@
-import c from "./Registration.module.css";
+import s from "./Registration.module.css";
 import Button from "../../elements/Button/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
@@ -76,9 +76,9 @@ const Registration = () => {
   console.log(values);
 
   return (
-    <div className={c.registrationWrapper}>
-      <div class={c.background}></div>
-      <form className={c.form} onSubmit={handleSubmit}>
+    <div className={s.registrationWrapper}>
+      <div class={s.background}></div>
+      <form className={s.form} onSubmit={handleSubmit}>
         <h3>New account</h3>
         {inputs.map((input) => (
           <Input
@@ -91,8 +91,8 @@ const Registration = () => {
         <Link to="/login">
           <Button>Sing Up</Button>
         </Link>
-        <div className={c.social}>
-          <ul className={c.ul}>
+        <div className={s.social}>
+          <ul className={s.ul}>
             <li>
               <a href="https://www.google.com">
                 <GoogleIcon />

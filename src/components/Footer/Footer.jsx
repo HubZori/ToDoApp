@@ -1,17 +1,17 @@
-import c from "../Footer/Footer.module.css";
+import s from "../Footer/Footer.module.css";
 
 const Footer = () => {
   return (
-    <div className={c.mainFooter}>
-      <div className={c.container}>
-        <div className={c.footerDiv}>
-          <div className={c.footerCopyright}>
+    <div className={s.mainFooter}>
+      <div className={s.container}>
+        <div className={s.footerDiv}>
+          <div className={s.footerCopyright}>
             "Made by"
             <a href="/#0">Cruip</a>
             ". All right reserved"
           </div>
-          <nav className={c.footerNav}>
-            <ul className={c.list}>
+          <nav className={s.footerNav}>
+            <ul className={s.list}>
               <li>
                 <a href="/#0">Contact</a>
               </li>

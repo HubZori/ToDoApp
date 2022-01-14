@@ -29,7 +29,6 @@
   width: 60px;
   cursor: pointer;
 }
-
 .list {
   display: flex;
   flex-wrap: wrap;

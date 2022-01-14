@@ -10,19 +10,16 @@
   outline: none;
   border: none;
 }
-
 .todolistLogo {
   height: 15vmin;
   pointer-events: none;
 }
-
-.todolistDiv {
+.todolistWrap {
   padding: 2px;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-line-clamp: 2;
 }
-
 .todolist textarea {
   resize: none;
   overflow: auto;
@@ -53,7 +50,6 @@ textarea::-webkit-scrollbar {
   background: #080710;
   transition: 0.25s;
 }
-
 .todolist h1 {
   font-weight: normal;
   letter-spacing: 0.05em;

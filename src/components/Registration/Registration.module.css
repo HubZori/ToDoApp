@@ -15,22 +15,15 @@
   line-height: 42px;
   text-align: center;
 }
-
 .form label {
   display: block;
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
 }
-
-::placeholder {
-  color: #e5e5e5;
-}
-
 .social div:hover {
   background-color: rgba(255, 255, 255, 0.47);
 }
-
 .ul {
   display: flex;
   justify-content: space-evenly;
@@ -41,8 +34,7 @@
   display: flex;
   padding: 4px;
 }
-
-.ul li a :hover {
+.ul li a:hover {
   fill: #6163ff;
   transition: fill 0.15s ease;
 }

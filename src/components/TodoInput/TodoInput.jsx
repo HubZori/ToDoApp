@@ -1,19 +1,16 @@
 import React, { useState } from "react";
-import c from "./TodoInput.module.css";
+import s from "./TodoInput.module.css";
 
 const TodoInput = ({ createTodo }) => {
   const [task, setTask] = useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault();
     createTodo(task);
     setTask("");
   };
-
   const handleChange = (e) => {
     setTask(e.target.value);
   };
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && e.target.value !== "") {
       handleSubmit(e);
@@ -21,8 +18,9 @@ const TodoInput = ({ createTodo }) => {
       e.preventDefault();
     }
   };
+
   return (
-    <form className={c.todoInputForm} onSubmit={handleSubmit}>
+    <form className={s.todoInputForm} onSubmit={handleSubmit}>
       <textarea
         id="task"
         name="task"

@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-
 import './Button.css'
 
 const Button = ({
     children, onClick, className, disabled, active, ...attrs
 }) => {
-
     const onClickAction = e => {
         if (disabled) {
             e.preventDefault();
@@ -14,15 +12,11 @@ const Button = ({
             return onClick(e);
         }
     }
-
-
     const classes = classNames(
         'btn',
         className,
         { active },
     );
-
-
     const Tag = attrs.href ? 'a' : 'button';
 
     return (
@@ -41,7 +35,7 @@ Button.propTypes = {
     className: PropTypes.string,
     disabled: PropTypes.bool,
     active: PropTypes.bool,
-};
+}
 
 Button.defaultProps = {
     children: 'Default button',

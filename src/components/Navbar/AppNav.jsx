@@ -1,11 +1,11 @@
 import Logo from "../Logo/Logo";
-import c from "./AppNav.module.css"
+import s from "./AppNav.module.css";
 import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
 
 const AppNav = () => {
   return (
-    <div className={c.navBar}>
+    <div className={s.navBar}>
       <Logo />
       <Navigation />
       <MobileNavigation />
@@ -14,4 +14,3 @@ const AppNav = () => {
 };
 
 export default AppNav;
-

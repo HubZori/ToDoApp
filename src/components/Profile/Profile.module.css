@@ -11,7 +11,6 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .userDetail {
   display: flex;
   width: 100%;
@@ -28,13 +27,11 @@
   width: 70%;
   border-radius: 50%;
 }
-
 .userData {
   display: flex;
   padding-left: 10%;
   flex-direction: column;
 }
-
 .userData h2 {
   margin: 0 auto;
   font-size: 20px;
@@ -74,7 +71,6 @@
   fill: #00ff37;
   transition: fill 0.25s ease;
 }
-
 .socialIcon {
   display: flex;
   flex-direction: column;

@@ -1,14 +1,14 @@
-import c from "../Logo/Logo.module.css";
+import s from "../Logo/Logo.module.css";
 import logo from "../../../src/logo.svg";
 import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <div className={c.LogoContainer}>
+    <div className={s.logoContainer}>
       <Link to="/">
-        <img src={logo} className={c.Logo} alt="logo" />
+        <img src={logo} className={s.logo} alt="logo" />
       </Link>
-      <div className={c.LogoTitle}>Servycing</div>
+      <div className={s.logoTitle}>Servycing</div>
     </div>
   );
 };

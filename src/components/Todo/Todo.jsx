@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import c from "./Todo.module.css";
+import s from "./Todo.module.css";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import EditIcon from "@mui/icons-material/Edit";
 
 const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
   const [isEdit, setIsEdit] = useState(false);
   const [editTask, setEditTask] = useState(task);
-
   const handleUpdate = (e) => {
     e.preventDefault();
     updateTodo(id, editTask);
     setIsEdit(false);
   };
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && e.target.value !== "") {
       updateTodo(id, editTask);
@@ -23,7 +21,7 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
   };
 
   return (
-    <div className={completed ? c.todoComplated : c.todo}>
+    <div className={completed ? s.todoComplated : s.todo}>
       {isEdit ? (
         <div key="edit" timeout={500}>
           {
@@ -41,21 +39,20 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
           }
         </div>
       ) : (
-        <div key="normal" timeout={500} className={c.todoTask}>
+        <div key="normal" timeout={500} className={s.todoTask}>
           <input
             onClick={toggleTodo}
             type="checkbox"
-            className={c.todoTaskInput}
+            className={s.todoTaskInput}
           />
           <div>{task}</div>
         </div>
       )}
-
-      <div className={c.todoButtons}>
-        <div className={c.todoButtonsEdit} onClick={() => setIsEdit(true)}>
+      <div className={s.todoButtons}>
+        <div className={s.todoButtonsEdit} onClick={() => setIsEdit(true)}>
           <EditIcon />
         </div>
-        <div className={c.todoButtonsRemove} onClick={removeTodo}>
+        <div className={s.todoButtonsRemove} onClick={removeTodo}>
           <DeleteOutlineIcon />
         </div>
       </div>

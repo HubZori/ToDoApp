@@ -7,7 +7,6 @@
   -o-background-size: cover;
   background-size: cover;
 }
-
 .heroSection h1 {
   text-align: center;
   display: block;
@@ -38,7 +37,6 @@
 .heroContent span {
   color: #5658dd;
 }
-
 .containerXs {
   text-align: center;
   max-width: 620px;
@@ -46,7 +44,6 @@
   padding-left: 0;
   padding-right: 0;
 }
-
 .buttonGroup {
   justify-content: center;
   display: flex;

@@ -7,19 +7,16 @@
   justify-content: space-between;
   border-radius: 10px 10px 10px 10px;
 }
-
 @media screen and (max-width: 440px) {
   .todo {
     flex-direction: column;
     align-items: unset;
   }
 }
-
 .todo form {
   display: flex;
   flex-direction: row;
 }
-
 @media screen and (max-width: 440px) {
   .todo form {
     flex-direction: column;

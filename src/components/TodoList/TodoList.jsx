@@ -8,24 +8,22 @@ import {
   updateTodo,
 } from "../../redux/action";
 import TodoInput from "../TodoInput/TodoInput.jsx";
-import c from "./TodoList.module.css";
+import s from "./TodoList.module.css";
 
 const TodoList = () => {
   const state = useSelector((state) => ({ ...state.todos }));
   let dispatch = useDispatch();
-
   const create = (newTodo) => {
     dispatch(addTodo(newTodo));
   };
-
   const update = (id, updateTask) => {
     dispatch(updateTodo({ id, updateTask }));
   };
 
   return (
-    <div className={c.todolist}>
+    <div className={s.todolist}>
       <div>
-        <img src={logo} className={c.todolistLogo} alt="logo" />
+        <img src={logo} className={s.todolistLogo} alt="logo" />
       </div>
       <h1>Список задач: {state.todos.length}</h1>
       <TodoInput createTodo={create} />
@@ -33,7 +31,7 @@ const TodoList = () => {
         {state.todos &&
           state.todos.map((todo) => {
             return (
-              <div className={c.todolistDiv} key={todo.id}>
+              <div className={s.todolistWrap} key={todo.id}>
                 <Todo
                   key={todo.id}
                   id={todo.id}

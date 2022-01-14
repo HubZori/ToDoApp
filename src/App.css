@@ -6,12 +6,10 @@
   justify-content: center;
   color: white;
 }
-
 .contentWrap {
   height: 100vh;
   flex: 1;
 }
-
 .appContent {
   flex: 1 0 auto;
   width: -webkit-fill-available;

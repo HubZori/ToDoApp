@@ -6,26 +6,21 @@
   height: 4rem;
   width: 100%;
 }
-
 .navBar nav ul {
   list-style: none;
 }
-
 .navBar nav ul li {
   margin: 1.5vw;
   display: inline-block;
 }
-
 .link {
   text-decoration: none;
   color: white;
 }
-
 .link:hover {
   color: #5658dd;
   transition: 0.25s;
 }
-
 .navBar .mobileNavigation {
   display: none;
 }
@@ -46,7 +41,6 @@
   .navBar .mobileNavigation .hamburger:hover {
     color: #5658dd;
   }
-
   .navBar nav ul {
     display: flex;
     flex-direction: column;
@@ -57,15 +51,12 @@
     background: #282c34;
     border-top: 2px solid #5658dd;
   }
-
   .navBar nav ul li {
     padding-left: 15%;
   }
-
   .navBar {
     opacity: 1;
   }
-
   .link:hover {
     border-bottom: none;
     color: #5658dd;
