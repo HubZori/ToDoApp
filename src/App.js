@@ -3,18 +3,18 @@
 
 import "./App.css";
 import { useSelector } from "react-redux";
-import TodoList from "./commponent/TodoList/TodoList.jsx";
+import TodoList from "./components/TodoList/TodoList.jsx";
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
-import LoginForm from "./commponent/Login/LoginForm ";
-import AppNav from "./commponent/Navbar/AppNav.jsx";
-import Registration from "./commponent/Registration/Registration";
-import GetStarted from "./commponent/GettingStarted/GetStarted";
-import Footer from "./commponent/Footer/Footer";
-import Profile from "./commponent/Profile/Profile";
+import LoginForm from "./components/Login/LoginForm";
+import AppNav from "./components/Navbar/AppNav.jsx";
+import Registration from "./components/Registration/Registration";
+import GetStarted from "./components/GettingStarted/GetStarted";
+import Footer from "./components/Footer/Footer";
+import Profile from "./components/Profile/Profile";
 
 const App = (props) => {
   const state = useSelector((state) => ({ ...state }));

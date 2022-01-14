@@ -6,7 +6,7 @@ import {
   addTodo,
   removeTodo,
   updateTodo,
-} from "../../Redux/action";
+} from "../../redux/action";
 import TodoInput from "../TodoInput/TodoInput.jsx";
 import c from "./TodoList.module.css";
 

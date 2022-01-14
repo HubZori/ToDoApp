@@ -1,8 +1,8 @@
 import c from "./Registration.module.css";
-import Button from "../../Elements/Button/Button";
+import Button from "../../elements/Button/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
-import Input from "../../Elements/Input/Input";
+import Input from "../../elements/Input/Input";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 

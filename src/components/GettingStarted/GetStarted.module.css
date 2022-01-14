@@ -1,7 +1,7 @@
 .heroSection {
   height: 100vh;
   padding-top: 80px;
-  background: url(../../Img/forest.jpg) no-repeat center center fixed;
+  background: url(../../img/forest.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
