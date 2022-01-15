@@ -1,0 +1,60 @@
+.todolist {
+  max-width: 790px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 3rem 3rem;
+  padding-top: 80px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.todolistLogo {
+  height: 15vmin;
+  pointer-events: none;
+}
+.todolistWrap {
+  padding: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.todolist textarea {
+  resize: none;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 14px 32px 14px 16px;
+  max-height: 17px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.07);
+  font-size: 14px;
+  color: #fff;
+  border: none;
+}
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+.todolist button {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: #080710;
+  background: #ffffff8f;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+.todolist button:hover {
+  color: #fff;
+  background: #080710;
+  transition: 0.25s;
+}
+.todolist h1 {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+ul {
+  padding: 0;
+}

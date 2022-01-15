@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import "./Todo.css";
+import s from "./Todo.module.css";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import EditIcon from "@mui/icons-material/Edit";
 
 const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
   const [isEdit, setIsEdit] = useState(false);
   const [editTask, setEditTask] = useState(task);
-
   const handleUpdate = (e) => {
     e.preventDefault();
     updateTodo(id, editTask);
     setIsEdit(false);
   };
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter" && e.target.value !== "") {
       updateTodo(id, editTask);
@@ -23,11 +21,11 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
   };
 
   return (
-    <div className={completed ? "todo complated" : "todo"}>
+    <div className={completed ? s.todoComplated : s.todo}>
       {isEdit ? (
         <div key="edit" timeout={500}>
           {
-            <form className="todo_form" onSubmit={handleUpdate}>
+            <form onSubmit={handleUpdate}>
               <textarea
                 type="text"
                 name="task"
@@ -41,21 +39,20 @@ const Todo = ({ toggleTodo, task, completed, id, removeTodo, updateTodo }) => {
           }
         </div>
       ) : (
-        <div key="normal" timeout={500} className="todo_task">
+        <div key="normal" timeout={500} className={s.todoTask}>
           <input
             onClick={toggleTodo}
             type="checkbox"
-            className="todo_task__input"
+            className={s.todoTaskInput}
           />
           <div>{task}</div>
         </div>
       )}
-
-      <div className="todo_buttons">
-        <div className="todo_buttons__edit" onClick={() => setIsEdit(true)}>
+      <div className={s.todoButtons}>
+        <div className={s.todoButtonsEdit} onClick={() => setIsEdit(true)}>
           <EditIcon />
         </div>
-        <div className="todo_buttons__remove" onClick={removeTodo}>
+        <div className={s.todoButtonsRemove} onClick={removeTodo}>
           <DeleteOutlineIcon />
         </div>
       </div>

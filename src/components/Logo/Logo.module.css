@@ -1,0 +1,14 @@
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  pointer-events: none;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+.logoTitle {
+  color: #fff;
+}

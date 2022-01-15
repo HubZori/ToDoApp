@@ -1,45 +1,17 @@
 .app {
-  max-width: 790px;
-  margin: auto;
-  margin-top: 3rem;
-  text-align: center;
-  max-height: 790px;
-  padding: 2rem 3rem 3rem;
-  box-shadow: 5px 10px 8px 10px #9e8f8f;
-  background: #7d628d;
-  color: rgb(246, 245, 248);
-  overflow: hidden;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
-.app textarea {
-  resize: none;
-  overflow: auto;
-  padding: 14px 32px 14px 16px;
-  max-height: 14px;
-  border-radius: 7px 0 0 7px;
-  border: 2px solid #be9ffc;
-  outline: none;
+.contentWrap {
+  height: 100vh;
+  flex: 1;
 }
-textarea::-webkit-scrollbar {
-  width: 0px;
-}
-.app button {
-  text-align: center;
-  padding: 16px 7px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  color: #ffffff;
-  background: linear-gradient(
-    318deg,
-    rgba(167, 170, 172, 0.87) 0%,
-    rgb(119, 113, 113) 100%
-  );
-  text-transform: capitalize;
-}
-.app button:hover {
-  color: rgb(235, 235, 235);
-  background: linear-gradient(
-    318deg,
-    rgb(119, 113, 113) 0%,
-    rgba(167, 170, 172, 0.87) 100%
-  );
+.appContent {
+  flex: 1 0 auto;
+  width: -webkit-fill-available;
+  width: 100%;
 }

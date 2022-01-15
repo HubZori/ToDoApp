@@ -1,0 +1,94 @@
+.profileMain {
+  width: 70%;
+  margin: 0px auto;
+  border: 1px solid #3a6372;
+  margin-top: 4rem;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.profileHeader {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.userDetail {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  flex-wrap: wrap;
+}
+.userImage {
+  display: flex;
+  width: 23%;
+  height: 0%;
+}
+.userImage img {
+  width: 70%;
+  border-radius: 50%;
+}
+.userData {
+  display: flex;
+  padding-left: 10%;
+  flex-direction: column;
+}
+.userData h2 {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.userData p {
+  font-size: 12px;
+  color: #f1f1f1;
+}
+.ul {
+  display: flex;
+  margin-top: 0;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.ul li a {
+  color: slategrey;
+}
+.item1 :hover {
+  fill: #fa2832;
+  transition: fill 0.25s ease;
+}
+.item2 :hover {
+  fill: #060ae9;
+  transition: fill 0.25s ease;
+}
+.item3 :hover {
+  fill: #1d82f5;
+  transition: fill 0.25s ease;
+}
+.item4 :hover {
+  fill: #ff000d;
+  transition: fill 0.25s ease;
+}
+.item5 :hover {
+  fill: #00ff37;
+  transition: fill 0.25s ease;
+}
+.socialIcon {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  text-align: right;
+  margin: 0 auto;
+}
+.msgBtn {
+  display: flex;
+  background: #6163ff;
+  padding: 5px 11px;
+  color: #eceded;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.msgBtn:hover {
+  color: #5658dd;
+  background: #eceded;
+  transition: 0.25s;
+}

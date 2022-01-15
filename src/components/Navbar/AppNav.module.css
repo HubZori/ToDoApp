@@ -1,0 +1,64 @@
+.navBar {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+.navBar nav ul {
+  list-style: none;
+}
+.navBar nav ul li {
+  margin: 1.5vw;
+  display: inline-block;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: #5658dd;
+  transition: 0.25s;
+}
+.navBar .mobileNavigation {
+  display: none;
+}
+@media (max-width: 990px) {
+  .navBar .navigation {
+    display: none;
+  }
+  .navBar .mobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+  .navBar .mobileNavigation .hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    color: white;
+  }
+  .navBar .mobileNavigation .hamburger:hover {
+    color: #5658dd;
+  }
+  .navBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 100%;
+    background: #282c34;
+    border-top: 2px solid #5658dd;
+  }
+  .navBar nav ul li {
+    padding-left: 15%;
+  }
+  .navBar {
+    opacity: 1;
+  }
+  .link:hover {
+    border-bottom: none;
+    color: #5658dd;
+  }
+}

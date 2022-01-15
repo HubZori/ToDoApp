@@ -1,0 +1,54 @@
+.mainFooter {
+  position: relative;
+}
+.container {
+  padding: 12px 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.footerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.footerDiv a {
+  text-decoration: none;
+}
+.brand h1 {
+  margin: 0;
+}
+.brand img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.logo {
+  pointer-events: none;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  padding: 0 8px;
+}
+.footerNav a {
+  color: #9ca9b3;
+  padding: 0 12px;
+}
+.footerCopyright {
+  color: #9ca9b3;
+}
+.footerCopyright a {
+  color: #eceded;
+}

@@ -1,58 +1,63 @@
 .todo {
   display: flex;
   padding: 0.3rem 1rem;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.07);
   position: relative;
-  transition: opacity 500ms ease-in-out;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px 10px 10px 10px;
 }
-
 @media screen and (max-width: 440px) {
   .todo {
     flex-direction: column;
     align-items: unset;
   }
 }
-
 .todo form {
   display: flex;
   flex-direction: row;
 }
-
 @media screen and (max-width: 440px) {
   .todo form {
     flex-direction: column;
   }
 }
 
-.todo_task {
+.todoTask {
   display: flex;
   cursor: default;
 }
-.todo_task__input {
+.todoTaskInput {
+  margin-top: 0px;
   cursor: pointer;
   justify-content: space-around;
   width: 17px;
   height: 17px;
   word-break: break-all;
 }
-.todo.complated {
+
+.todoComplated {
+  display: flex;
+  padding: 0.3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.07);
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px 10px 10px 10px;
   transition: opacity 300ms ease-in-out;
   transition-delay: 200ms;
   opacity: 0.5;
 }
-.todo_buttons {
+.todoButtons {
   justify-content: center;
   display: flex;
   flex-shrink: 0;
 }
-.todo_buttons__edit {
+.todoButtonsEdit {
   cursor: pointer;
   box-shadow: 3px 3px 3px -2px #795548;
 }
-.todo_buttons__remove {
+.todoButtonsRemove {
   cursor: pointer;
   box-shadow: 3px 3px 3px -2px #795548;
 }
