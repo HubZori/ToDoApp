@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import "./App.css";
-import {useSelector} from "react-redux";
-import TodoList from "./components/TodoList/TodoList.jsx";
+import ToDoApp from "./components/ToDoApp/ToDoApp";
 import {
     BrowserRouter as Router,
     Route,
@@ -18,33 +17,33 @@ import Profile from "./components/Profile/Profile";
 
 const App = () => {
 
-    const state = useSelector((state) => ({...state}));
+
 
     return (
         <div className="app">
             <div className="contentWrap">
                 <Router>
-                    <AppNav/>
+                    <AppNav />
                     <div className="appContent">
                         <Routes>
-                            <Route path="/" element={<GetStarted/>}/>
+                            <Route path="/" element={<GetStarted />} />
                         </Routes>
                         <Routes>
-                            <Route path="/todolist" element={<TodoList state={state}/>}/>
+                            <Route path="/todolist" element={<ToDoApp />} />
                         </Routes>
                         <Routes>
-                            <Route path="/login" element={<LoginForm/>}/>
+                            <Route path="/login" element={<LoginForm />} />
                         </Routes>
                         <Routes>
-                            <Route path="/registration" element={<Registration/>}/>
+                            <Route path="/registration" element={<Registration />} />
                         </Routes>
                         <Routes>
-                            <Route path="/profile" element={<Profile/>}/>
+                            <Route path="/profile" element={<Profile />} />
                         </Routes>
                     </div>
                 </Router>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };

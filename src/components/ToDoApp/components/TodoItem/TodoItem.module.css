@@ -1,0 +1,27 @@
+.todoitem {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 0.3rem 1rem;
+  border-radius: 10px 10px 10px 10px;
+  margin: 6px;
+  align-items: center;
+}
+.input {
+  display: flex;
+  justify-content: space-around;
+}
+.input input {
+  cursor: pointer;
+}
+
+.remove {
+  cursor: pointer;
+}
+
+input:checked + .itemspan {
+  text-decoration: line-through;
+  transition: opacity 300ms ease-in-out;
+  transition-delay: 200ms;
+  opacity: 0.5;
+}
